@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import glob
 
-#TASK 1
+
 #using glob library and regex * to read all of the states.csv file
 #creating a data frame using list which contain a loop to read all of the files
 #using concate to concatenate/merge all of the csv into one 
@@ -25,7 +25,7 @@ us_sensus = pd.concat(df_list)
 print(us_sensus.head())
 print(len(us_sensus))
 
-#TASK 2
+
 #printing the data types to see if the data is plotable
 #printing the columns name
 
@@ -81,7 +81,7 @@ for col in us_sensus:
     if has_nan:
         print(f'Column {col} contains NaN values.')
         
-# we know now column Pacifi and FemalePop has nan value.
+# we know now column Pacific and FemalePop has nan value.
 # those column are the percentage, so to fill it we just need to
 # subtract from it's data counterpart
 
